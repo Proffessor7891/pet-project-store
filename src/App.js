@@ -28,20 +28,4 @@ function App() {
 }
 
 
-
-//export default connect(
-//   (state) => {
-//  return {
-//    items: state.pizzas.items,
-//    filters: state.filters,
-//  };
-//},
-//  (dispatch) => {
-// return {
-//    setPizzas: (items) => dispatch(setPizzas(items)),
-    
-//  };
-//},
-
-//)(App);
 export default App;
