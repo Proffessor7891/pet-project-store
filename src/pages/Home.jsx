@@ -4,9 +4,16 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import { Categories, SortPopup, PizzaBlock, PizzaLoadingBlock } from '../components';
 
+import { popUp } from '../components/Popup';
 import { setCategory, setSortBy } from '../redux/actions/filters';
 import { fetchPizzas } from '../redux/actions/pizzas';
 import { addPizzaToCart } from '../redux/actions/cart';
+
+
+
+
+
+
 
 const categoryNames = ['Мясные', 'Вегетарианская', 'Гриль', 'Острые', 'Закрытые'];
 const sortIems = [
@@ -64,6 +71,7 @@ function Home() {
                 key={obj.id}
                 addedCount={cartItems[obj.id] && cartItems[obj.id].items.length}
                 {...obj}
+
               />
             ))
           : Array(12)
